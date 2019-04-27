@@ -1,18 +1,117 @@
-body
-{
-    background-color: black; 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End css reset*/
+body{
+    background-color: rgb(14, 14, 14); 
     color: white; 
     font-family: Courier; 
     text-align: center;
+    margin: 0;
+    font-size: 16px; 
+    height: 100%;
+    box-sizing: border-box;
 }
-h1
-{
+h1{
     font-size: 300%
 }
-p
-{
-    border: 1px solid white;
+p{
     margin-left: 20%;
     margin-right: 20%;
-    line-height: 80px;
+    line-height: 1.2em;
+    margin: 10px 15% 0;
+}
+.paragraph-header{
+    padding: 10px 0;
+    border: 1px solid white;
+    margin: 10px 10%;
+}
+.button{
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 2%;
+    width: 100px;
+}
+.button:hover{
+    background-color: #E1E1E1;
+}
+.button-selected{
+    padding: 15px 60px;
+}
+.header{
+    position: sticky;
+    background-color: rgb(0, 0, 0); 
+    width: 100%;
+    top: 0;
+    padding: 10px 0px 10px;
+    margin: 0px 0px 20px;
+}
+.foreground{
+    background-color: rgb(19, 19, 19); 
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin: 176px 0px 0px;
+}
+.footer{
+    background-color: rgb(19, 19, 19); 
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin: 176px 0px 0px;
+}
+.fixed-background{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 100px 0 0;
+    z-index: -1;
+}
+.main-nav{
+    margin: 10px 0px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
