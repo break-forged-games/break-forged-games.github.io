@@ -56,43 +56,53 @@ h1{
     font-size: 300%
 }
 p{
-    margin-left: 20%;
-    margin-right: 20%;
+    color:black;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
     line-height: 1.2em;
-    margin: 10px 15% 0;
+    /* margin: 10px 15% 0; */
     font-family: helvetica;
 }
-.paragraph-header{
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
+.card header{
+    background: rgb(255, 136, 0);
+    border-radius: 10px 10px 0 0;
     padding: 10px 0;
-    border: 3px solid rgb(223, 223, 223);
-    margin: 10px 10%;
-    color: black;
-    font-weight: bold;
-    font-family: helvetica;
+    /* margin: 10px 10% 0; */
+    color: white;
+    font-size: 32px;
+    font-family: consolas;
+    /* width: 80%; */
+    flex: 0 1 100%;
 }
 .text-segment{
-    width: 80%;
-    background: rgb(129, 129, 129);
-    border-radius: 10px;
-    padding: 10px 0;
-    border: 3px solid rgb(151, 151, 151);
-    margin: 10px 10%;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 15%;
+    flex: 1 1 100%;
+    /* margin: 0 10% 10px; */
 }
-.image-segment{
-    text-align: center;
-    width: 38%;
-    min-width: 420px;
-    background: rgb(129, 129, 129);
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px 10%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    /* align-content: stretch; */
     border-radius: 10px;
-    padding: 10px 0;
-    border: 3px solid rgb(151, 151, 151);
-    margin: 10px 10%;
+    background-color: black;
+}
+.card + .card{
+    margin-left: 20px;
+    width: 100%;
 }
 .round-image{
-    border-radius: 10px;
-    width: 95%;
+    /* border-radius: 0 0 10px 10px; */
+    /* width: 70%; */
+    /* margin: 0 10% 10px; */
+    display: block;
 }
 .button{
     background-color: rgb(255, 255, 255);
@@ -106,6 +116,7 @@ p{
     font-weight: bold;
     font-family: helvetica;
     border-radius: 10px;
+    border: 3px solid rgb(255, 136, 0);
 }
 .button:hover{
     background-color: #E1E1E1;
@@ -134,7 +145,7 @@ p{
     margin: 176px 0px 0px;
 }
 .fixed-background{
-    position:fixed;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
