@@ -43,7 +43,7 @@ table {
 }
 /*End css reset*/
 body{
-    background-color: rgb(14, 14, 14); 
+    background-color: rgb(0, 0, 0); 
     color: white; 
     font-family: Courier; 
     text-align: center;
@@ -53,55 +53,51 @@ body{
     box-sizing: border-box;
 }
 h1{
-    font-size: 300%
+    font-size: 300%;
+    text-shadow: 0 3px rgb(255, 136, 0);
 }
 p{
     color:black;
-    /* margin-left: 20%; */
-    /* margin-right: 20%; */
     line-height: 1.2em;
-    /* margin: 10px 15% 0; */
     font-family: helvetica;
 }
 .card header{
     background: rgb(255, 136, 0);
     border-radius: 10px 10px 0 0;
     padding: 10px 0;
-    /* margin: 10px 10% 0; */
     color: white;
     font-size: 32px;
     font-family: consolas;
-    /* width: 80%; */
     flex: 0 1 100%;
+    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
+    transition: background-color .5s, box-shadow .5s, color .5s;
 }
 .text-segment{
     background: rgb(255, 255, 255);
     border-radius: 0 0 10px 10px;
     padding: 10px 15%;
     flex: 1 1 100%;
-    /* margin: 0 10% 10px; */
+    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
+    transition: background-color .5s, box-shadow .5s, color .5s;
 }
 .row{
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    /* align-items: stretch; */
     margin: 20px 10%;
 }
 .card {
     display: flex;
     flex-direction: column;
-    /* align-content: stretch; */
     border-radius: 10px;
     background-color: black;
+    box-shadow: 0 6px rgb(0, 0, 0);
 }
 .card + .card{
     margin-left: 20px;
     width: 100%;
 }
 .round-image{
-    /* border-radius: 0 0 10px 10px; */
-    /* width: 70%; */
-    /* margin: 0 10% 10px; */
     display: block;
 }
 .button{
@@ -111,15 +107,18 @@ p{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 5px 2%;
+    margin: 5px 2% 8px;
     width: 100px;
     font-weight: bold;
     font-family: helvetica;
     border-radius: 10px;
-    border: 3px solid rgb(255, 136, 0);
+    box-shadow: 0 3px rgb(255, 136, 0);
+    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
+    transition: background-color .5s, box-shadow .5s, color .5s;
 }
-.button:hover{
-    background-color: #E1E1E1;
+a.button:hover{
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0 3px rgb(204, 109, 0);
 }
 .button-selected{
     padding: 15px 60px;
@@ -131,18 +130,29 @@ p{
     top: 0;
     padding: 10px 0px 10px;
     margin: 0px 0px 20px;
+    /* box-shadow: 0 2px rgb(255, 136, 0); */
+}
+.foreground-no-image{
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin: 0px 0px 0px;
+    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
 .foreground{
-    background-color: rgb(19, 19, 19); 
+    background-color: rgb(37, 37, 37);
     width: 100%;
     padding: 10px 0px 10px;
     margin: 176px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
 .footer{
-    background-color: rgb(19, 19, 19); 
+    background-color: rgb(37, 37, 37);
     width: 100%;
     padding: 10px 0px 10px;
     margin: 176px 0px 0px;
+    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
 .fixed-background{
     position: fixed;
@@ -153,8 +163,12 @@ p{
     z-index: -1;
 }
 .main-nav{
-    position: sticky;
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    background-color: rgb(37, 37, 37); 
+    padding: 5px 0;
+    margin: 5px 10%;
     margin: 10px 0px 0px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
