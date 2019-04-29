@@ -4,8 +4,13 @@
         <title>&lt;br&gt; Forged Games</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script>
+            window.addEventListener("load", function() {
+                document.querySelector("body").classList.remove("preload");
+            });
+        </script>
     </head>
-    <body>
+    <body class="preload">
         <div class="header">
             <h1>&lt;br&gt; forged games</h1>
             <nav class="main-nav">
@@ -13,7 +18,7 @@
                 <span class="button button-selected">Dev log</span>
             </nav>
         </div>
-        <div class="foreground-no-image">
+        <div class="foreground foreground-no-image">
             <div class="row">
                 <div class="card">
                     <header>Nothing here yet... Check back soon</header>

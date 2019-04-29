@@ -69,16 +69,14 @@ p{
     font-size: 32px;
     font-family: consolas;
     flex: 0 1 100%;
-    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
-    transition: background-color .5s, box-shadow .5s, color .5s;
+    /* transition: background-color .5s, box-shadow .5s, color .5s; */
 }
 .text-segment{
     background: rgb(255, 255, 255);
     border-radius: 0 0 10px 10px;
     padding: 10px 15%;
     flex: 1 1 100%;
-    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
-    transition: background-color .5s, box-shadow .5s, color .5s;
+    /* transition: background-color .5s, box-shadow .5s, color .5s; */
 }
 .row{
     display: flex;
@@ -100,6 +98,9 @@ p{
 .round-image{
     display: block;
 }
+.preload .button{
+    transition: none !important;
+}
 .button{
     background-color: rgb(255, 255, 255);
     color: black;
@@ -113,8 +114,7 @@ p{
     font-family: helvetica;
     border-radius: 10px;
     box-shadow: 0 3px rgb(255, 136, 0);
-    -webkit-transition: background-color .5s, box-shadow .5s, color .5s;
-    transition: background-color .5s, box-shadow .5s, color .5s;
+    transition: background-color .5s, box-shadow .5s;
 }
 a.button:hover{
     background-color: rgb(190, 190, 190);
@@ -130,29 +130,28 @@ a.button:hover{
     top: 0;
     padding: 10px 0px 10px;
     margin: 0px 0px 20px;
+    border-radius: 0 0 10px 10px;
     /* box-shadow: 0 2px rgb(255, 136, 0); */
-}
-.foreground-no-image{
-    background-color: rgb(37, 37, 37);
-    width: 100%;
-    padding: 10px 0px 10px;
-    margin: 0px 0px 0px;
-    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
 .foreground{
     background-color: rgb(37, 37, 37);
     width: 100%;
     padding: 10px 0px 10px;
-    margin: 176px 0px 0px;
+    margin: 176px 0px 2px;
     border-radius: 10px;
-    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
+    box-shadow: 0 2px rgb(255, 136, 0); 
+    /* , 0 -2px rgb(255, 136, 0); */
 }
 .footer{
     background-color: rgb(37, 37, 37);
     width: 100%;
     padding: 10px 0px 10px;
-    margin: 176px 0px 0px;
+    margin: 176px 0px 2px;
+    border-radius: 10px;
     box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
+}
+.foreground-no-image{
+    margin: 0px 0px 2px;
 }
 .fixed-background{
     position: fixed;
@@ -170,5 +169,6 @@ a.button:hover{
     padding: 5px 0;
     margin: 5px 10%;
     margin: 10px 0px 0px;
+    border-radius: 10px;
     box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
 }
