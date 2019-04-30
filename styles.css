@@ -68,14 +68,14 @@ p{
     color: white;
     font-size: 32px;
     font-family: consolas;
-    flex: 0 1 100%;
+    /* flex: 0 1 100%; */
     /* transition: background-color .5s, box-shadow .5s, color .5s; */
 }
 .text-segment{
     background: rgb(255, 255, 255);
     border-radius: 0 0 10px 10px;
     padding: 10px 15%;
-    flex: 1 1 100%;
+    flex: 2 1 100%;
     /* transition: background-color .5s, box-shadow .5s, color .5s; */
 }
 .row{
@@ -90,13 +90,18 @@ p{
     border-radius: 10px;
     background-color: black;
     box-shadow: 0 6px rgb(0, 0, 0);
+    flex: 1 1 100%;
+    justify-content: flex-start;
 }
 .card + .card{
     margin-left: 20px;
     width: 100%;
 }
 .round-image{
+    margin: 0 auto 0;
+    width: 100%;
     display: block;
+    /*need to add code to center the thanos, and to reduce the minimum size*/
 }
 .preload .button{
     transition: none !important;
@@ -170,5 +175,6 @@ a.button:hover{
     margin: 5px 10%;
     margin: 10px 0px 0px;
     border-radius: 10px;
-    box-shadow: 0 2px rgb(255, 136, 0), 0 -2px rgb(255, 136, 0);
+    box-shadow: 0 2px rgb(255, 136, 0);
+    /* , 0 -2px rgb(255, 136, 0); */
 }
